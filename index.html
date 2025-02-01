@@ -1,0 +1,364 @@
+<!DOCTYPE html>      
+<html lang="en">      
+<head>      
+    <meta charset="UTF-8">      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">      
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">      
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">    
+    
+    <title>QUIZ</title>      
+    <style>      
+        .me-6 {      
+            margin-right: 8rem;      
+        }      
+        .pt-6 {      
+            margin-top: 6rem;      
+        }  
+        .navbar-kirikelontong {      
+            margin-left: 4rem;      
+        }      
+        .spasi-kataNavbar {      
+            letter-spacing: 0.1rem;      
+        }      
+        .warna-utama {      
+            background-color: orangered !important;      
+        }      
+        .warna-abu {      
+            background-color: #F0F0F0 !important;      
+            padding: 4rem;    
+        }      
+        .banner {      
+            background-color: rgb(0, 13, 68, 1) !important;      
+            height: 70vh;      
+        }      
+        .ion-icon {      
+            font-size: 4rem;     
+            color: orangered;      
+            text-align: center;      
+        }      
+        .ion-icon-globe {      
+            font-size: 20rem;    
+        }  
+        .ion-icon-hubungi {      
+            font-size: 1.5rem;
+        }     
+        body {    
+           font-family: 'Nunito', sans-serif !important;    
+        }    
+    
+             
+        .service-item h5 {      
+            margin-top: 1rem;      
+        }  
+        .service-item{  
+            align-items: center;      
+            justify-content: center;      
+            text-align: center;  
+        }  
+        .card-img-top {    
+            width: 100%;    
+            height: 300px;  
+            object-fit: cover;  
+        }    
+        .card{  
+            text-align: center;  
+            justify-content: center;  
+            margin-bottom: 10px;  
+        }  
+        .card-text{ 
+            text-align: center;  
+            align-items: center;    
+            justify-content: center;  
+        } 
+        .card.harga{
+            border: 2px solid orangered;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        } 
+        .card-padding-vertical {  
+            padding-top: 30px; 
+            padding-bottom: 30px;  
+        }
+        .card-body.pemisah{
+            border-top: 2px solid orangered;
+        }
+        .hovered-card{  
+            transition: .3s;  
+        }  
+        .hovered-card:hover{  
+            transform: scale(1.05);  
+        }  
+        .card-body.warna-utama {    
+            color: white !important; 
+            display: flex;  
+            align-items: center;  
+            justify-content: center;
+        }  
+        @keyframes appear{
+            from{
+                opacity: 0;
+                scale: 0.5; 
+            }
+            to{
+                opacity: 1;
+                scale: 1;
+            }
+        }
+        .anim{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>      
+</head>      
+<body>      
+    <!--Navbar-->      
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark warna-utama fixed-top">      
+        <div class="container-fluid">      
+            <a class="navbar-brand me-auto navbar-kirikelontong spasi-kataNavbar" href="#"><b>KELONTONGˢᴬᴸ</b></a>      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">      
+                <span class="navbar-toggler-icon"></span>      
+            </button>      
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">      
+                <div class="navbar-nav ms-auto">      
+                    <a class="nav-link me-5 spasi-kataNavbar hovered-card" href="#tentang">TENTANG</a>      
+                    <a class="nav-link me-5 spasi-kataNavbar hovered-card" href="#layanan">LAYANAN</a>      
+                    <a class="nav-link me-5 spasi-kataNavbar hovered-card" href="#portofolio">PORTOFOLIO</a>      
+                    <a class="nav-link me-5 spasi-kataNavbar hovered-card" href="#harga">HARGA</a>      
+                    <a class="nav-link me-6 spasi-kataNavbar hovered-card" href="#hubungi">HUBUNGI</a>      
+                </div>      
+            </div>      
+        </div>      
+    </nav>      
+      
+    <!--Banner-->      
+    <div class="container-fluid banner d-flex align-items-center">      
+        <div class="container">      
+            <h1 class="text-light text-center display-2"><b>TOKO KELONTONG</b></h1>      
+            <h1 class="text-light text-center display-6">Spesialis Aneka Lontong</h1><br>      
+            <div class="input-group mb-3">      
+                <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="basic-addon2">      
+                <div class="input-group-append">      
+                    <button class="btn btn-warning text-light hovered-card" type="button">Kirim Pesan</button>      
+                </div>      
+            </div>      
+        </div>      
+    </div>      
+      
+    <!--Tentang Perusahaan-->      
+    <div class="container-fluid pt-6"  id="tentang" >      
+        <div class="container-fluid ps-5">      
+            <h1><b>TENTANG KELONTONG</b></h1><br>      
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi tenetur quos mollitia assumenda adipisci fuga incidunt, recusandae reprehenderit iusto ducimus alias inventore sint quam molestias fugiat quia qui doloremque dignissimos explicabo asperiores voluptas ad excepturi consequatur. Possimus accusantium nostrum voluptas, fuga perspiciatis doloremque nulla illo tempora similique neque, velit distinctio?</h5><br>      
+            <h6 style="color: grey;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto assumenda harum impedit asperiores numquam natus dicta fugit quo quidem sit? Error quidem, dolore amet ad incidunt corporis vel neque quibusdam. Quaerat, temporibus eligendi beatae nesciunt nulla suscipit similique quasi iusto mollitia cumque dolor debitis vitae omnis. Fugiat, a. Voluptas quasi voluptatem consequuntur magnam ipsa, corrupti aliquid odio. Ea distinctio laborum labore veritatis unde. Possimus tenetur iste obcaecati velit illum rerum hic distinctio ipsam ut. Laborum non molestiae libero officiis vitae atque dolore accusantium! Sed iure possimus, ad, at iusto id exercitationem nam rerum nihil, consequuntur veritatis est et vero repellat.</h6><br>      
+            <button type="button" class="btn btn-outline-warning btn-lg hovered-card">Hubungi Kami</button>      
+        </div>      
+    </div><br><br>      
+      
+    <!--Nilai Utama Kami-->      
+    <div class="container-fluid warna-abu">      
+        <div class="container anim">      
+            <div class="row">      
+                <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">      
+                    <ion-icon name="earth" class="ion-icon ion-icon-globe"></ion-icon>      
+                </div>      
+                <div class="col-12 col-md-8">      
+                    <h1><b>NILAI UTAMA KAMI</b></h1><br>      
+                    <h5><b>MISI:</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor doloremque autem corrupti fugiat magnam. Numquam ipsam sequi at ratione illo doloremque eius optio! Natus voluptate neque minima aspernatur vero aliquam expedita ipsam quisquam, dolore ea sint et laboriosam quia, porro facilis beatae temporibus enim ab distinctio saepe eligendi maiores illo.</h5><br>      
+                    <h6 style="color: grey;"><b>VISI:</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est voluptate officiis temporibus doloribus, accusantium reiciendis repellat odio corporis animi, enim iure dolorem. Minus ratione quaerat quod maxime magni tempore dolorem quia dicta iusto soluta sapiente quis magnam quidem, illum rerum numquam cum eveniet impedit aut porro labore. Debitis, blanditiis aliquid! Ipsam ducimus consectetur consequuntur quas quia autem, delectus, voluptatum aspernatur facere excepturi ipsa? Labore dicta omnis error eos, reprehenderit commodi.</h6>      
+                </div>      
+            </div>      
+        </div>      
+    </div><br><br><br>      
+      
+    <!--Pelayanan-->      
+    <div class="container-fluid"  id="layanan"  style="padding-top: 70px;">    
+        <div class="container">      
+            <h1 class="text-center">PELAYANAN</h1><br>      
+            <h3 class="text-center">Apa yang kami tawarkan</h3><br><br>      
+            <div class="row anim">      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="power" class="ion-icon"></ion-icon>      
+                    <h5>POWER</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>      
+                </div>      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="heart" class="ion-icon"></ion-icon>      
+                    <h5>LOVE</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>      
+                </div>      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="bag-check" class="ion-icon"></ion-icon>      
+                    <h5>JOB DONE</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>      
+                </div>      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="leaf" class="ion-icon"></ion-icon>      
+                    <h5>GREEN</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>      
+                </div>      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="thumbs-up" class="ion-icon"></ion-icon>      
+                    <h5>CERTIFIED</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>      
+                </div>      
+                <div class="col-12 col-sm-6 col-md-4 service-item">      
+                    <ion-icon name="build" class="ion-icon"></ion-icon>      
+                    <h5>HARD WORK</h5>      
+                    <h6 style="color: grey;">Lorem ipsum dolor sit amet.</h6>    
+                </div>      
+            </div>      
+        </div>      
+    </div><br><br><br>      
+    
+    <!--Portofolio-->  
+    <div class="container-fluid warna-abu"  id="portofolio">    
+        <div class="text-center"><h1><b>PORTOFOLIO</b></h1></div><br><br>    
+        <div class="text-center"><h2>What we have created</h2></div><br><br>    
+            <div class="row justify-content-center anim">    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card">    
+                        <img src="https://i.ibb.co.com/3yQk07p/image.png" class="card-img-top" alt="ketupat">    
+                        <div class="card-body">    
+                          <h5 class="card-title">LONTONG KETUPAT</h5>    
+                          <p class="card-text" style="color: grey;">Lorem ipsum dolor sit amet.</p>    
+                        </div>    
+                      </div>    
+                </div>    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card">    
+                        <img src="https://i.ibb.co.com/XC96B1F/image.png" class="card-img-top" alt="lonjong">    
+                        <div class="card-body">    
+                          <h5 class="card-title">LONTONG LONJONG</h5>    
+                          <p class="card-text" style="color: grey;">Lorem ipsum dolor sit amet.</p>    
+                        </div>    
+                      </div>    
+                </div>    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card">    
+                        <img src="https://i.ibb.co.com/y89p661/image.png" class="card-img-top" alt="kerucut">    
+                        <div class="card-body">    
+                          <h5 class="card-title">LONTONG KERUCUT</h5>    
+                          <p class="card-text" style="color: grey;">Lorem ipsum dolor sit amet.</p>   
+                        </div>    
+                      </div>    
+                </div>    
+            </div><br>  
+  
+    <!--Daftar Harga-->  
+    <div class="container-fluid warna-abu" id="harga">    
+        <div class="text-center"><h1><b>DAFTAR HARGA</b></h1></div>  
+        <div class="text-center mt-4"><h2>Pilih paket sesuai kebutuhan anda</h2></div>    
+            <div class="row justify-content-center mt-4 anim">    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card harga">  
+                        <div class="card-body warna-utama card-padding-vertical">    
+                          <h1 class="card-text text-light">Dasar</h1>    
+                        </div>    
+                        <div class="card-body">   
+                            <p class="card-text"><b>20</b> Lorem</p>  
+                            <p class="card-text"><b>15</b> ipsum</p> 
+                            <p class="card-text"><b>5</b> dolor</p> 
+                            <p class="card-text"><b>2</b> sit</p>
+                                <div class="card-body pemisah">
+                                    <h2 class="text-dark fw-bold mt-3">Rp. 290.000</h2>
+                                    <p class="text-muted">per bulan</p>
+                                    <button type="button" class="btn btn-primary btn-lg warna-utama hovered-card">Daftar</button> 
+                                </div>
+                          </div>   
+                      </div>     
+                </div>    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card harga">  
+                        <div class="card-body warna-utama card-padding-vertical">    
+                          <h1 class="card-text text-light">Pro</h1>    
+                        </div>    
+                        <div class="card-body">   
+                            <p class="card-text"><b>50</b> Lorem</p>  
+                            <p class="card-text"><b>25</b> ipsum</p> 
+                            <p class="card-text"><b>10</b> dolor</p> 
+                            <p class="card-text"><b>5</b> sit</p>
+                                <div class="card-body pemisah">
+                                    <h2 class="text-dark fw-bold mt-3">Rp. 599.000</h2>
+                                    <p class="text-muted">per bulan</p>
+                                    <button type="button" class="btn btn-primary btn-lg warna-utama hovered-card">Daftar</button> 
+                                </div>  
+                          </div>   
+                      </div>     
+                </div>    
+                <div class="col-sm-6 col-lg-4 mb-3 hovered-card">    
+                    <div class="card harga">  
+                        <div class="card-body warna-utama card-padding-vertical">    
+                          <h1 class="card-text text-light">Premium</h1>    
+                        </div>    
+                        <div class="card-body">   
+                            <p class="card-text"><b>100</b> Lorem</p>  
+                            <p class="card-text"><b>50</b> ipsum</p> 
+                            <p class="card-text"><b>25</b> dolor</p> 
+                            <p class="card-text"><b>10</b> sit</p> 
+                                <div class="card-body pemisah">
+                                    <h2 class="text-dark fw-bold mt-3">Rp. 899.000</h2>
+                                    <p class="text-muted">per bulan</p>
+                                    <button type="button" class="btn btn-primary btn-lg warna-utama hovered-card">Daftar</button> 
+                                </div>
+                          </div>   
+                      </div>   
+                </div>    
+            </div><br> 
+
+    <!--HUBUNGI-->
+    <div class="container-fluid pt-6" id="hubungi">
+        <h1 style="text-align: center;"><b>HUBUNGI</b></h1>
+            <div class="container-fluid">
+                <div class="row pt-3">
+                    <div class="col-5" style="text-align: center;">
+                        <h5>Hubungi kami segera dan kami akan memberi kabar dalam 24 jam<br></h5>
+                        <h5><ion-icon name="location" class="pt-2"></ion-icon>Medan, Sumatera Utara<br></h5>
+                        <h5><ion-icon name="phone-portrait-outline" class="pt-2"></ion-icon> +62 85312345<br></h5>
+                        <h5><ion-icon name="mail" class="pt-2"></ion-icon> iniemailcoi@domain.com<br></h5>
+                    </div>
+                    <div class="col-7">
+                        <form>
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Nama">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                              </div>
+                              <div class="form-group pt-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Komentar"></textarea>
+                              </div>
+                            </div>
+                            <div class="container-flex pt-4" style="text-align-last: end;"><button type="button" class="btn btn-outline-dark">Kirim</button></div>
+                            
+                          </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+                
+  
+     
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>      
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>      
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script>  
+        document.addEventListener("DOMContentLoaded", function() {  
+            const sections = document.querySelectorAll('div[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');  
+            function changeActiveLink() {  
+                let index = sections.length;  
+                while(--index && window.scrollY + 50 < sections[index].offsetTop) {}  
+                navLinks.forEach((link) => link.classList.remove('active'));  
+                navLinks[index].classList.add('active');  
+            }  
+            window.addEventListener('scroll', changeActiveLink);  
+            changeActiveLink();  
+        });  
+    </script>       
+</body>      
+</html>    
